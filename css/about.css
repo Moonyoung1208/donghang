@@ -1,0 +1,2163 @@
+/* 인사말 페이지 (abuot.html) ========================================== */
+
+.greeting-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greeting-text {
+    padding: 20px 0;
+}
+
+.greeting-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.greeting-title .highlight {
+    color: var(--main-color);
+}
+
+.greeting-message {
+    line-height: 1.9;
+    color: #444;
+    font-size: 16px;
+}
+
+.greeting-message p {
+    margin-bottom: 24px;
+}
+
+.greeting-message strong {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.greeting-thanks {
+    font-weight: 600;
+    margin-top: 40px !important;
+}
+
+.greeting-signature {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--line-color);
+    text-align: right;
+}
+
+.signature-position {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.signature-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* 핵심가치 섹션 */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.value-card {
+    background: #fff;
+    padding: 40px 24px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.value-card:hover .value-icon {
+    background: var(--main-color);
+}
+
+.value-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.value-card:hover .value-icon i {
+    color: #fff;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.value-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* 인사말 반응형 1400px ========================================== */
+@media screen and (max-width: 1400px) {
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 인사말 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+
+    .greeting-title {
+        font-size: 26px;
+    }
+
+    .greeting-message {
+        font-size: 15px;
+    }
+
+    .value-card {
+        padding: 30px 20px;
+    }
+
+    .value-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .value-icon i {
+        font-size: 32px;
+    }
+}
+
+/* 인사말 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+
+    .greeting-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .greeting-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .greeting-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .greeting-message {
+        font-size: 14px;
+    }
+
+    .greeting-message p {
+        margin-bottom: 20px;
+    }
+
+    .signature-name {
+        font-size: 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .value-card {
+        padding: 30px 20px;
+    }
+
+    .value-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .value-icon i {
+        font-size: 28px;
+    }
+
+    .value-card h3 {
+        font-size: 18px;
+    }
+
+    .value-card p {
+        font-size: 13px;
+    }
+}
+
+/* 설립배경 (about2.html) ========================================== */
+
+/* 인트로 */
+.background-intro {
+    padding: 80px 0;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.intro-title .highlight {
+    color: var(--main-color);
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* 통계카드 */
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 40px 24px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.stat-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 타임라인 */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--main-color);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    order: 2;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: 1;
+    text-align: right;
+}
+
+.timeline-date {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--main-color);
+    padding-top: 8px;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.timeline-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.timeline-content p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* 타임라인 점 */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background: var(--main-color);
+    border: 4px solid #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px var(--main-bg);
+    z-index: 2;
+}
+
+/* 설립목적 */
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.purpose-card {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.purpose-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--main-color);
+    transition: height 0.3s;
+}
+
+.purpose-card:hover::before {
+    height: 100%;
+}
+
+.purpose-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.purpose-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--main-bg);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.purpose-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.purpose-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* 비전 */
+.vision {
+    background: linear-gradient(135deg, var(--main-color) 0%, #ff5da7 100%);
+    color: #fff;
+    padding: 100px 0;
+}
+
+.vision-content {
+    text-align: center;
+}
+
+.vision-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.vision-year {
+    display: block;
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.vision-subtitle {
+    font-size: 24px;
+    margin-bottom: 60px;
+    opacity: 0.95;
+}
+
+
+.vision-subtitle strong {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.vision-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.vision-item i {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+/* 설립배경 반응형 1400px ==========================================*/
+@media screen and (max-width: 1400px) {
+    .greeting-content {
+        grid-template-columns: 350px 1fr;
+        gap: 40px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statistics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 설립배경 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+
+    .intro-title {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .timeline {
+        padding-left: 40px;
+    }
+
+    .timeline::before {
+        left: 0;
+        transform: none;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        text-align: left;
+        order: 0;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        order: 0;
+        text-align: left;
+    }
+
+    .timeline-item::before {
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    .timeline-date {
+        font-size: 20px;
+    }
+
+    .vision-title {
+        font-size: 32px;
+    }
+
+    .vision-year {
+        font-size: 56px;
+    }
+
+    .vision-subtitle {
+        font-size: 20px;
+    }
+
+    .vision-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 설립배경 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+
+    .background-intro {
+        padding: 40px 0;
+    }
+
+    .intro-content {
+        padding: 0 20px;
+    }
+
+    .intro-title {
+        font-size: 22px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .statistics-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .stat-card {
+        padding: 30px 20px;
+    }
+
+    .stat-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .stat-icon i {
+        font-size: 28px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 15px;
+    }
+
+    .stat-desc {
+        font-size: 13px;
+    }
+
+    .timeline {
+        padding: 20px 0 20px 30px;
+    }
+
+    .timeline-date {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h4 {
+        font-size: 18px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+    }
+
+    .purpose-grid {
+        padding: 0 20px;
+    }
+
+    .purpose-card {
+        padding: 30px 20px;
+    }
+
+    .purpose-number {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .purpose-card h3 {
+        font-size: 18px;
+    }
+
+    .purpose-card p {
+        font-size: 14px;
+    }
+
+    .vision {
+        padding: 60px 20px;
+    }
+
+    .vision-title {
+        font-size: 24px;
+    }
+
+    .vision-year {
+        font-size: 48px;
+    }
+
+    .vision-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .vision-items {
+        gap: 20px;
+    }
+
+    .vision-item {
+        font-size: 15px;
+    }
+
+    .vision-item i {
+        font-size: 20px;
+    }
+}
+
+
+/* 운영철학 (about3.html) ========================================== */
+
+/* 철학 인트로 */
+.philosophy-intro {
+    padding: 80px 0;
+}
+
+/* 핵심 철학 */
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.philosophy-card {
+    background: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    position: relative;
+    text-align: center;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.philosophy-number {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--main-bg);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.philosophy-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.philosophy-card:hover .philosophy-icon {
+    background: var(--main-color);
+}
+
+.philosophy-icon i {
+    font-size: 48px;
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.philosophy-card:hover .philosophy-icon i {
+    color: #fff;
+}
+
+.philosophy-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.philosophy-card>p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.philosophy-list {
+    text-align: left;
+    padding-top: 20px;
+    border-top: 1px solid var(--line-color);
+}
+
+.philosophy-list li {
+    font-size: 14px;
+    color: #555;
+    padding: 8px 0 8px 24px;
+    position: relative;
+}
+
+.philosophy-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* 서비스 원칙 */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.principle-item {
+    display: flex;
+    gap: 24px;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.principle-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.principle-icon-wrap {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principle-icon-wrap i {
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+.principle-text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.principle-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* 품질 관리 */
+.quality-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.quality-card {
+    flex: 1;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.quality-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.quality-step {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.quality-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.quality-list {
+    list-style: none;
+}
+
+.quality-list li {
+    font-size: 15px;
+    color: #666;
+    padding: 10px 0 10px 24px;
+    position: relative;
+}
+
+.quality-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quality-arrow {
+    flex-shrink: 0;
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+/* 약속 */
+.promise {
+    background: var(--main-bg);
+    color: #222;
+    padding: 80px 0;
+    position: relative;
+}
+
+.promise-content {
+    text-align: center;
+}
+
+.promise-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.promise-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.promise-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.65);
+    padding: 20px 30px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+}
+
+.promise-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(10px);
+}
+
+
+.promise-item i {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.promise-item span {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.promise img {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 10vw;
+}
+
+/* 운영철학 반응형 1400px ========================================== */
+@media screen and (max-width: 1400px) {
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quality-content {
+        flex-wrap: wrap;
+    }
+
+    .quality-arrow {
+        display: none;
+    }
+}
+
+/* 운영철학 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+    .philosophy-intro {
+        padding: 60px 0;
+    }
+
+    .philosophy-card {
+        padding: 40px 30px;
+    }
+
+    .philosophy-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .philosophy-icon i {
+        font-size: 40px;
+    }
+
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quality-card {
+        padding: 30px 20px;
+    }
+
+    .promise-title {
+        font-size: 28px;
+    }
+}
+
+/* 운영철학 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+    .philosophy-intro {
+        padding: 40px 0;
+    }
+
+    .philosophy-grid {
+        padding: 0 20px;
+    }
+
+    .philosophy-card {
+        padding: 40px 20px;
+    }
+
+    .philosophy-number {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .philosophy-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .philosophy-icon i {
+        font-size: 32px;
+    }
+
+    .philosophy-card h3 {
+        font-size: 20px;
+    }
+
+    .philosophy-card>p {
+        font-size: 14px;
+    }
+
+    .philosophy-list li {
+        font-size: 13px;
+    }
+
+    .principles-grid {
+        padding: 0 20px;
+    }
+
+    .principle-item {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .principle-icon-wrap {
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+    }
+
+    .principle-icon-wrap i {
+        font-size: 28px;
+    }
+
+    .principle-text h4 {
+        font-size: 18px;
+    }
+
+    .principle-text p {
+        font-size: 14px;
+    }
+
+    .quality-content {
+        padding: 0 20px;
+    }
+
+    .quality-card {
+        padding: 30px 20px;
+    }
+
+    .quality-step {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    .quality-card h3 {
+        font-size: 18px;
+    }
+
+    .quality-list li {
+        font-size: 14px;
+    }
+
+    .promise {
+        padding: 60px 20px;
+    }
+
+    .promise-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .promise-item {
+        padding: 16px 20px;
+        gap: 16px;
+    }
+
+    .promise-item i {
+        font-size: 20px;
+    }
+
+    .promise-item span {
+        font-size: 14px;
+    }
+}
+
+/* 조직도/협력기관 (about4.html) ========================================== */
+
+/* 조직도 */
+.org-chart {
+    padding: 60px 0;
+}
+
+.org-level {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.org-level::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 30px;
+    background: var(--main-color);
+}
+
+.org-level-1::after {
+    display: none;
+}
+
+.org-box {
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+    min-width: 200px;
+}
+
+.org-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.org-box::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 30px;
+    background: var(--main-color);
+}
+
+.org-level-1 .org-box::before {
+    display: none;
+}
+
+.org-box.ceo {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.org-box.small {
+    padding: 20px 30px;
+    min-width: 150px;
+}
+
+.org-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.org-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.org-sub {
+    font-size: 14px;
+    color: #666;
+}
+
+.org-box.ceo .org-sub {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 2단계 연결선 */
+.org-level-2::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    background: var(--main-color);
+}
+
+/* 3단계 그룹 */
+.org-level-3 {
+    gap: 80px;
+}
+
+.org-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.org-group::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 30px;
+    background: var(--main-color);
+}
+
+/* 부서 소개 */
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.dept-card {
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.dept-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dept-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.dept-card:hover .dept-icon {
+    background: var(--main-color);
+}
+
+.dept-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.dept-card:hover .dept-icon i {
+    color: #fff;
+}
+
+.dept-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 24px;
+}
+
+.dept-list {
+    text-align: left;
+}
+
+.dept-list li {
+    font-size: 15px;
+    color: #666;
+    padding: 10px 0 10px 24px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.dept-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 협력기관 */
+.partner-category {
+    margin-bottom: 60px;
+}
+
+.partner-category:last-child {
+    margin-bottom: 0;
+}
+
+.partner-category-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.partner-category-title i {
+    color: var(--main-color);
+}
+
+/* 협력기관 그리드 (이미지 있는 카드) */
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.partner-card {
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.partner-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.partner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.partner-card:hover .partner-img img {
+    transform: scale(1.05);
+}
+
+.partner-info {
+    padding: 24px;
+}
+
+.partner-info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.partner-type {
+    font-size: 14px;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.partner-date {
+    font-size: 13px;
+    color: #999;
+}
+
+/* 협력기관 리스트 */
+.partner-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.partner-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 20px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s;
+}
+
+.partner-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.partner-item i {
+    color: var(--main-color);
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.partner-item span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 제휴 문의 */
+.inquiry-box {
+    background: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.inquiry-box h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.inquiry-box p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.inquiry-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.inquiry-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 조직도/협력기관 반응형 1400px ========================================== */
+@media screen and (max-width: 1400px) {
+    .org-level {
+        gap: 30px;
+    }
+
+    .org-level-3 {
+        gap: 50px;
+    }
+
+    .dept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 조직도/협력기관 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+    .org-chart {
+        padding: 40px 0;
+    }
+
+    .org-level {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .org-level::after {
+        display: none;
+    }
+
+    .org-level-2::before {
+        display: none;
+    }
+
+    .org-box {
+        min-width: 250px;
+    }
+
+    .org-box::before {
+        width: 2px;
+        height: 20px;
+    }
+
+    .org-level-3 {
+        gap: 20px;
+    }
+
+    .org-group {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .org-group::before {
+        height: 20px;
+    }
+
+    .dept-card {
+        padding: 30px 24px;
+    }
+
+    .dept-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .dept-icon i {
+        font-size: 32px;
+    }
+
+    .partner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-list {
+        grid-template-columns: 1fr;
+    }
+
+    .inquiry-box h2 {
+        font-size: 26px;
+    }
+
+    .inquiry-box p {
+        font-size: 16px;
+    }
+
+    .inquiry-buttons {
+        flex-direction: column;
+    }
+}
+
+/* 조직도/협력기관 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+    .org-chart {
+        padding: 20px;
+    }
+
+    .org-level {
+        margin-bottom: 30px;
+    }
+
+    .org-box {
+        padding: 20px 24px;
+        min-width: 100%;
+    }
+
+    .org-box.small {
+        padding: 16px 20px;
+    }
+
+    .org-title {
+        font-size: 16px;
+    }
+
+    .org-name {
+        font-size: 14px;
+    }
+
+    .org-sub {
+        font-size: 13px;
+    }
+
+    .dept-grid {
+        padding: 0 20px;
+    }
+
+    .dept-card {
+        padding: 30px 20px;
+    }
+
+    .dept-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dept-icon i {
+        font-size: 28px;
+    }
+
+    .dept-card h3 {
+        font-size: 20px;
+    }
+
+    .dept-list li {
+        font-size: 14px;
+        padding: 8px 0 8px 20px;
+    }
+
+    .partner-category {
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .partner-category-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .partner-grid {
+        padding: 0 20px;
+    }
+
+    .partner-img {
+        height: 150px;
+    }
+
+    .partner-info {
+        padding: 20px;
+    }
+
+    .partner-info h4 {
+        font-size: 16px;
+    }
+
+    .partner-type {
+        font-size: 13px;
+    }
+
+    .partner-date {
+        font-size: 12px;
+    }
+
+    .partner-list {
+        padding: 0 20px;
+    }
+
+    .partner-item {
+        padding: 16px 20px;
+    }
+
+    .partner-item i {
+        font-size: 16px;
+    }
+
+    .partner-item span {
+        font-size: 14px;
+    }
+
+    .inquiry-box {
+        padding: 40px 20px;
+    }
+
+    .inquiry-box h2 {
+        font-size: 22px;
+    }
+
+    .inquiry-box p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .inquiry-buttons {
+        gap: 12px;
+    }
+
+    .inquiry-buttons .btn {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+
+/* 오시는 길 (about5.html) ========================================== */
+
+/* 위치 정보 */
+.location-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* 지도 */
+.map-container {
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+.map-placeholder i {
+    font-size: 64px;
+    margin-bottom: 16px;
+    color: var(--main-color);
+}
+
+.map-placeholder p {
+    font-size: 16px;
+}
+
+/* 위치 정보 */
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-section {
+    background: #fff;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.info-section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-section h3 i {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.info-text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.info-text p {
+    margin-bottom: 8px;
+}
+
+.info-text strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.info-section .btn {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* 대중교통 */
+.transport-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.transport-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.transport-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.transport-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transport-icon.subway {
+    background: #e8f5e9;
+}
+
+.transport-icon.bus {
+    background: #e3f2fd;
+}
+
+.transport-icon.car {
+    background: #fff3e0;
+}
+
+.transport-icon i {
+    font-size: 36px;
+}
+
+.transport-icon.subway i {
+    color: #4caf50;
+}
+
+.transport-icon.bus i {
+    color: #2196f3;
+}
+
+.transport-icon.car i {
+    color: #ff9800;
+}
+
+.transport-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.transport-info {
+    text-align: left;
+    margin-bottom: 16px;
+    padding: 16px;
+    background: var(--light-bg);
+    border-radius: 6px;
+}
+
+.transport-info:last-of-type {
+    margin-bottom: 0;
+}
+
+.subway-line {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #4caf50;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.station-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.detail {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.bus-type {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.bus-numbers {
+    font-size: 15px;
+    color: #2196f3;
+    font-weight: 600;
+}
+
+.parking-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.parking-info:last-child {
+    margin-bottom: 0;
+}
+
+.parking-info i {
+    color: #ff9800;
+    font-size: 16px;
+}
+
+/* 주변 랜드마크 */
+.landmark-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.landmark-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.landmark-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.landmark-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landmark-icon i {
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.landmark-text h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.landmark-text p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 오시는 길 반응형 1400px ========================================== */
+@media screen and (max-width: 1400px) {
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .transport-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .landmark-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 오시는 길 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+    #map {
+        height: 400px;
+    }
+
+    .transport-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .transport-icon i {
+        font-size: 32px;
+    }
+
+    .landmark-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 오시는 길 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+    .location-content {
+        padding: 0 20px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .map-placeholder i {
+        font-size: 48px;
+    }
+
+    .map-placeholder p {
+        font-size: 14px;
+    }
+
+    .location-info {
+        gap: 16px;
+    }
+
+    .info-section {
+        padding: 20px;
+    }
+
+    .info-section h3 {
+        font-size: 16px;
+    }
+
+    .info-section h3 i {
+        font-size: 18px;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .transport-grid {
+        padding: 0 20px;
+    }
+
+    .transport-card {
+        padding: 30px 20px;
+    }
+
+    .transport-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .transport-icon i {
+        font-size: 28px;
+    }
+
+    .transport-card h3 {
+        font-size: 20px;
+    }
+
+    .transport-info {
+        padding: 12px;
+    }
+
+    .subway-line {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+
+    .station-name {
+        font-size: 15px;
+    }
+
+    .detail {
+        font-size: 13px;
+    }
+
+    .bus-type {
+        font-size: 13px;
+    }
+
+    .bus-numbers {
+        font-size: 14px;
+    }
+
+    .parking-info {
+        font-size: 13px;
+    }
+
+    .landmark-grid {
+        padding: 0 20px;
+    }
+
+    .landmark-item {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .landmark-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .landmark-icon i {
+        font-size: 24px;
+    }
+
+    .landmark-text h4 {
+        font-size: 15px;
+    }
+
+    .landmark-text p {
+        font-size: 13px;
+    }
+}

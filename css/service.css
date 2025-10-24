@@ -1,0 +1,1549 @@
+/* 병원동행 서비스 (service.html) ========================================== */
+
+/* 서비스 인트로 */
+.service-intro {
+    padding: 80px 0;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.intro-title .highlight {
+    color: var(--main-color);
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* 서비스 대상 */
+.target-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.target-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.target-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.target-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.target-card:hover .target-icon {
+    background: var(--main-color);
+}
+
+.target-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.target-card:hover .target-icon i {
+    color: #fff;
+}
+
+.target-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.target-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* 서비스 내용 */
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.detail-card {
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.detail-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.detail-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--main-bg);
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 24px 0;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.detail-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.detail-list {
+    list-style: none;
+}
+
+.detail-list li {
+    font-size: 15px;
+    color: #666;
+    padding: 10px 0 10px 24px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.detail-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* 이용 프로세스 */
+.process-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.process-step {
+    flex: 1;
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.process-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.process-step h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.process-step p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.process-arrow {
+    flex-shrink: 0;
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+/* 요금 안내 */
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.price-card {
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.price-card.featured {
+    border: 3px solid var(--main-color);
+}
+
+.price-badge-top {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    padding: 8px 24px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0 0 8px 8px;
+}
+
+.price-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.price-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.price-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--light-bg);
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.price-amount {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.unit {
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+    margin-left: 4px;
+}
+
+.price-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.price-list li {
+    font-size: 15px;
+    color: #666;
+    padding: 12px 0 12px 24px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.price-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.price-note {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding-top: 20px;
+    border-top: 1px solid var(--line-color);
+}
+
+.price-info {
+    margin-top: 40px;
+}
+
+.info-box {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.info-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-box h4 i {
+    color: var(--main-color);
+}
+
+.info-box ul {
+    list-style: none;
+}
+
+.info-box ul li {
+    font-size: 15px;
+    color: #666;
+    padding: 8px 0 8px 24px;
+    position: relative;
+    line-height: 1.7;
+}
+
+.info-box ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 서비스 특징 */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon i {
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* 신청 문의 */
+.service-inquiry {
+    padding: 80px 0;
+}
+
+.inquiry-box {
+    background: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.inquiry-box h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.inquiry-box p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.inquiry-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.inquiry-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 서비스 반응형 1400px ========================================== */
+@media screen and (max-width: 1400px) {
+    .target-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-content {
+        flex-wrap: wrap;
+    }
+
+    .process-arrow {
+        display: none;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 서비스 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+    .service-intro {
+        padding: 60px 0;
+    }
+
+    .intro-title {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .target-card {
+        padding: 30px 24px;
+    }
+
+    .target-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .target-icon i {
+        font-size: 32px;
+    }
+
+    .detail-card {
+        padding: 30px 24px;
+    }
+
+    .detail-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .detail-icon i {
+        font-size: 32px;
+    }
+
+    .process-step {
+        padding: 30px 24px;
+    }
+
+    .step-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .step-icon i {
+        font-size: 32px;
+    }
+
+    .price {
+        font-size: 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inquiry-box h2 {
+        font-size: 26px;
+    }
+
+    .inquiry-box p {
+        font-size: 16px;
+    }
+
+    .inquiry-buttons {
+        flex-direction: column;
+    }
+}
+
+/* 서비스 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+    .service-intro {
+        padding: 40px 0;
+    }
+
+    .intro-content {
+        padding: 0 20px;
+    }
+
+    .intro-title {
+        font-size: 22px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .target-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .target-card {
+        padding: 30px 20px;
+    }
+
+    .target-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .target-icon i {
+        font-size: 28px;
+    }
+
+    .target-card h3 {
+        font-size: 18px;
+    }
+
+    .target-card p {
+        font-size: 14px;
+    }
+
+    .detail-grid {
+        padding: 0 20px;
+    }
+
+    .detail-card {
+        padding: 30px 20px;
+    }
+
+    .detail-number {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .detail-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .detail-icon i {
+        font-size: 28px;
+    }
+
+    .detail-card h3 {
+        font-size: 20px;
+    }
+
+    .detail-list li {
+        font-size: 14px;
+        padding: 8px 0 8px 20px;
+    }
+
+    .process-content {
+        padding: 0 20px;
+    }
+
+    .process-step {
+        padding: 30px 20px;
+    }
+
+    .step-number {
+        font-size: 13px;
+        padding: 5px 14px;
+    }
+
+    .step-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .step-icon i {
+        font-size: 28px;
+    }
+
+    .process-step h3 {
+        font-size: 18px;
+    }
+
+    .process-step p {
+        font-size: 14px;
+    }
+
+    .price-grid {
+        padding: 0 20px;
+    }
+
+    .price-card {
+        padding: 30px 20px;
+    }
+
+    .price-badge-top {
+        right: 20px;
+        font-size: 13px;
+        padding: 6px 20px;
+    }
+
+    .price-header h3 {
+        font-size: 20px;
+    }
+
+    .price-badge {
+        font-size: 13px;
+        padding: 5px 14px;
+    }
+
+    .price {
+        font-size: 36px;
+    }
+
+    .unit {
+        font-size: 18px;
+    }
+
+    .price-list li {
+        font-size: 14px;
+        padding: 10px 0 10px 20px;
+    }
+
+    .price-note {
+        font-size: 13px;
+    }
+
+    .price-info {
+        padding: 0 20px;
+    }
+
+    .info-box {
+        padding: 24px 20px;
+    }
+
+    .info-box h4 {
+        font-size: 16px;
+    }
+
+    .info-box ul li {
+        font-size: 14px;
+        padding: 6px 0 6px 20px;
+    }
+
+    .features-grid {
+        padding: 0 20px;
+    }
+
+    .feature-item {
+        padding: 30px 20px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feature-icon i {
+        font-size: 28px;
+    }
+
+    .feature-item h3 {
+        font-size: 16px;
+    }
+
+    .feature-item p {
+        font-size: 13px;
+    }
+
+    .service-inquiry {
+        padding: 60px 0;
+    }
+
+    .inquiry-box {
+        padding: 40px 20px;
+    }
+
+    .inquiry-box h2 {
+        font-size: 22px;
+    }
+
+    .inquiry-box p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .inquiry-buttons {
+        gap: 12px;
+    }
+
+    .inquiry-buttons .btn {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+
+/* 기관용 파견 서비스 (service2.html) ========================================== */
+
+/* 파트너 인트로 */
+.partner-intro {
+    padding: 80px 0;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.intro-title .highlight {
+    color: var(--main-color);
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* 파견 대상 기관 */
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.partner-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.partner-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.partner-card:hover .partner-icon {
+    background: var(--main-color);
+}
+
+.partner-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.partner-card:hover .partner-icon i {
+    color: #fff;
+}
+
+.partner-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.partner-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* 파견 서비스 내용 */
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-number {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.service-info ul {
+    list-style: none;
+}
+
+.service-info ul li {
+    font-size: 15px;
+    color: #666;
+    padding: 8px 0 8px 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.service-info ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 파견 형태 */
+.type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.type-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.type-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.type-badge {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    padding: 8px 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0 0 8px 8px;
+}
+
+.type-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-icon i {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.type-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.type-period {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--light-bg);
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.type-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.type-features {
+    list-style: none;
+    text-align: left;
+}
+
+.type-features li {
+    font-size: 14px;
+    color: #666;
+    padding: 8px 0 8px 20px;
+    position: relative;
+}
+
+.type-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* 파견 프로세스 */
+.process-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flow-step {
+    flex: 1;
+    background: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.flow-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.flow-number {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flow-step h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.flow-step p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.flow-arrow {
+    flex-shrink: 0;
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* 파견의 장점 */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: var(--main-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon i {
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* 제휴 문의 */
+.partner-inquiry {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+
+.inquiry-content {
+    background: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.inquiry-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.inquiry-content>p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.inquiry-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.inquiry-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    padding: 24px;
+    background: var(--light-bg);
+    border-radius: 8px;
+}
+
+.inquiry-item i {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inquiry-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.inquiry-item p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 4px;
+}
+
+.inquiry-item span {
+    font-size: 13px;
+    color: #999;
+}
+
+.inquiry-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.inquiry-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 반응형 1400px ========================================== */
+@media screen and (max-width: 1400px) {
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-content {
+        grid-template-columns: 1fr;
+    }
+
+    .type-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-flow {
+        flex-wrap: wrap;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inquiry-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 반응형 1000px ========================================== */
+@media screen and (max-width: 1000px) {
+    .partner-intro {
+        padding: 60px 0;
+    }
+
+    .intro-title {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .partner-card {
+        padding: 30px 24px;
+    }
+
+    .partner-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .partner-icon i {
+        font-size: 32px;
+    }
+
+    .service-item {
+        padding: 30px 24px;
+    }
+
+    .service-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .type-card {
+        padding: 30px 24px;
+    }
+
+    .type-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .type-icon i {
+        font-size: 32px;
+    }
+
+    .flow-step {
+        padding: 24px 16px;
+    }
+
+    .flow-number {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .benefit-icon i {
+        font-size: 28px;
+    }
+
+    .inquiry-content h2 {
+        font-size: 26px;
+    }
+
+    .inquiry-content>p {
+        font-size: 16px;
+    }
+
+    .inquiry-buttons {
+        flex-direction: column;
+    }
+}
+
+/* 반응형 480px ========================================== */
+@media screen and (max-width: 480px) {
+    .partner-intro {
+        padding: 40px 0;
+    }
+
+    .intro-content {
+        padding: 0 20px;
+    }
+
+    .intro-title {
+        font-size: 22px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .partner-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .partner-card {
+        padding: 30px 20px;
+    }
+
+    .partner-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .partner-icon i {
+        font-size: 28px;
+    }
+
+    .partner-card h3 {
+        font-size: 18px;
+    }
+
+    .partner-card p {
+        font-size: 14px;
+    }
+
+    .service-content {
+        padding: 0 20px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .service-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .service-info h3 {
+        font-size: 18px;
+    }
+
+    .service-info ul li {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .type-grid {
+        padding: 0 20px;
+    }
+
+    .type-card {
+        padding: 30px 20px;
+    }
+
+    .type-badge {
+        right: 20px;
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    .type-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .type-icon i {
+        font-size: 28px;
+    }
+
+    .type-card h3 {
+        font-size: 20px;
+    }
+
+    .type-period {
+        font-size: 13px;
+        padding: 5px 14px;
+    }
+
+    .type-desc {
+        font-size: 14px;
+    }
+
+    .type-features li {
+        font-size: 13px;
+    }
+
+    .process-flow {
+        padding: 0 20px;
+    }
+
+    .flow-step {
+        padding: 24px 16px;
+    }
+
+    .flow-number {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .flow-step h3 {
+        font-size: 16px;
+    }
+
+    .flow-step p {
+        font-size: 13px;
+    }
+
+    .benefits-grid {
+        padding: 0 20px;
+    }
+
+    .benefit-card {
+        padding: 30px 20px;
+    }
+
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .benefit-icon i {
+        font-size: 28px;
+    }
+
+    .benefit-card h3 {
+        font-size: 16px;
+    }
+
+    .benefit-card p {
+        font-size: 13px;
+    }
+
+    .inquiry-content {
+        padding: 40px 20px;
+    }
+
+    .inquiry-content h2 {
+        font-size: 22px;
+    }
+
+    .inquiry-content>p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .inquiry-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .inquiry-item i {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .inquiry-item h4 {
+        font-size: 15px;
+    }
+
+    .inquiry-item p {
+        font-size: 14px;
+    }
+
+    .inquiry-item span {
+        font-size: 12px;
+    }
+
+    .inquiry-buttons {
+        gap: 12px;
+    }
+
+    .inquiry-buttons .btn {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}

@@ -4,13 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="더 동행 - 함께 걷는 길, 더 든든한 동행. 병원동행 서비스와 전문 교육 프로그램을 제공합니다.">
-    <meta name="keywords" content="병원동행, 병원동행서비스, 병원동행매니저, 간병, 의료동행">
-    <title>더 동행 - 함께 걷는 길, 더 든든한 동행</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="더 동행 - 함께 걷는 길, 더 따뜻한 동행">
+    <title>인사말 - 더 동행</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favi/apple-icon-57x57.png">
@@ -31,8 +26,21 @@
     <meta name="msapplication-TileImage" content="/assets/favi/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="./js/common.js" defer></script>
+
 </head>
 
 <body>
@@ -42,8 +50,9 @@
             <div class="header-wrapper">
                 <h1 class="logo">
                     <a href="index.html">
-                        <img src="/assets/img/logo.png" alt="">
+                        <img src="/assets/img/logo.png" alt="동행로고">
                     </a>
+                    <span class="hidden">더동행</span>
                 </h1>
 
                 <button class="menu-toggle" aria-label="메뉴 열기">
@@ -104,35 +113,39 @@
         </div>
     </header>
 
-    <!-- 메인 비주얼 -->
+    <!-- 히어로 섹션 -->
     <section class="hero">
         <div class="hero-slider">
+
+            <!-- 슬라이드 1 -->
             <div class="hero-slide active">
                 <div class="container">
-                    <div class="hero-content mw1200">
+                    <div class="hero-content inner">
                         <h2 class="hero-title">함께 걷는 길, <br class="mobile-br"> 더 든든한 동행</h2>
-                        <p class="hero-text">전문 교육을 이수한 병원동행매니저가 보호자처럼 정성껏 함께합니다</p>
-                        <a href="service.html" class="ctm_btn ctm_btn-large ctm_btn-white">서비스 자세히 보기</a>
+                        <p class="hero-text">전문 교육을 이수한 병원동행매니저가 <br class="mobile-br"> 보호자처럼 정성껏 함께합니다</p>
+                        <a href="service.html" class="btn btn-large btn-outline">서비스 자세히 보기</a>
                     </div>
                 </div>
             </div>
 
+            <!-- 슬라이드 2 -->
             <div class="hero-slide">
                 <div class="container">
-                    <div class="hero-content mw1200">
+                    <div class="hero-content inner">
                         <h2 class="hero-title">전문 병원동행매니저 <br class="mobile-br"> 교육 프로그램</h2>
-                        <p class="hero-text">체계적인 이론과 실습으로 전문성을 갖춘 매니저를 양성합니다</p>
-                        <a href="program.html" class="ctm_btn ctm_btn-large ctm_btn-white">교육 신청하기</a>
+                        <p class="hero-text">체계적인 이론과 실습으로 <br class="mobile-br"> 전문성을 갖춘 매니저를 양성합니다</p>
+                        <a href="program.html" class="btn btn-large btn-outline">교육 신청하기</a>
                     </div>
                 </div>
             </div>
 
+            <!-- 슬라이드 3 -->
             <div class="hero-slide">
                 <div class="container">
-                    <div class="hero-content mw1200">
+                    <div class="hero-content inner">
                         <h2 class="hero-title">병원·요양기관 <br class="mobile-br"> 인력 파견 서비스</h2>
                         <p class="hero-text">검증된 전문 인력을 기관에 파견해드립니다</p>
-                        <a href="service.html#partner" class="ctm_btn ctm_btn-large ctm_btn-white">제휴 문의하기</a>
+                        <a href="service.html#partner" class="btn btn-large btn-outline">제휴 문의하기</a>
                     </div>
                 </div>
             </div>
@@ -142,7 +155,8 @@
             <button class="hero-prev" aria-label="이전 슬라이드">
                 <i class="fa-solid fa-angle-left"></i>
             </button>
-            <div class="hero-dots"></div>
+            <div class="hero-dots">
+            </div>
             <button class="hero-next" aria-label="다음 슬라이드">
                 <i class="fa-solid fa-angle-right"></i>
             </button>
@@ -150,15 +164,16 @@
     </section>
 
     <!-- 서비스 한눈에 보기 -->
-    <section class="services-overview">
+    <section class="services section">
         <div class="container">
             <h2 class="section-title">서비스 한눈에 보기</h2>
             <p class="section-subtitle">더 동행이 제공하는 전문 서비스를 확인하세요</p>
 
-            <div class="service-cards">
-                <article class="service-card fade-up">
+            <div class="service-content inner">
+                <!-- 서비스1 -->
+                <article class="service-card" style="transition-delay: 0s;">
                     <div class="service-icon">
-                        <img src="/img/shortcut1.png" alt="동행서비스아이콘">
+                        <img src="assets/img/shortcut1.png" alt="동행서비스아이콘">
                     </div>
                     <div>
                         <h3 class="service-card-title">병원동행 서비스</h3>
@@ -168,9 +183,10 @@
                     </div>
                 </article>
 
-                <article class="service-card fade-up">
+                <!-- 서비스2 -->
+                <article class="service-card" style="transition-delay: 0.08s;">
                     <div class="service-icon">
-                        <img src="/img/shortcut2.png" alt="교육프로그램아이콘">
+                        <img src="assets//img/shortcut2.png" alt="교육프로그램아이콘">
                     </div>
                     <div>
                         <h3 class="service-card-title">교육 프로그램</h3>
@@ -180,9 +196,10 @@
                     </div>
                 </article>
 
-                <article class="service-card fade-up">
+                <!-- 서비스3 -->
+                <article class="service-card" style="transition-delay: 0.16s;">
                     <div class="service-icon">
-                        <img src="/img/shortcut3.png" alt="인력파견아이콘">
+                        <img src="assets//img/shortcut3.png" alt="인력파견아이콘">
                     </div>
                     <div>
                         <h3 class="service-card-title">인력 파견</h3>
@@ -196,14 +213,14 @@
     </section>
 
     <!-- 교육 일정 -->
-    <section class="program-schedule">
-        <div class="container mw1200">
-            <div class="schedule-wrapper">
-                <div class="schedule-content fade-up">
+    <section class="program section bg">
+        <div class="container">
+            <div class="program-content inner">
+                <div class="program-text">
                     <h2 class="section-title">병원동행매니저 교육</h2>
-                    <p class="schedule-text">전문성과 따뜻함을 갖춘 동행매니저가 되어보세요.<br>체계적인 교육과 실습, 그리고 취업 연계까지 지원합니다.</p>
+                    <p class="section-subtitle">전문성과 따뜻함을 갖춘 동행매니저가 되어보세요.<br>체계적인 교육과 실습, 그리고 취업 연계까지 지원합니다.</p>
 
-                    <ul class="schedule-list">
+                    <ul class="program-list">
                         <li>의료 기초 지식 및 병원 이해</li>
                         <li>응급 상황 대처 및 안전 관리</li>
                         <li>고객 응대 및 서비스 매너</li>
@@ -211,42 +228,51 @@
                     </ul>
 
                     <div class="program-btns">
-                        <a href="program.html" class="ctm_btn ctm_btn-outline ctm_btn-large">교육 신청 확인하기</a>
+                        <a href="program.html" class="btn btn-outline btn-large">교육 확인하기</a>
                     </div>
                 </div>
 
-                <div class="schedule-image fade-up">
-                    <img src="./img/program.png" alt="">
-                </div>
+                <div class="program-image"></div>
             </div>
         </div>
     </section>
 
     <!-- mou 협약 체결 -->
-    <section class="mou">
-        <div class="container mw1200">
-            <div class="mou-wrapper">
-                <h2 class="section-title">MOU 체결</h2>
-                <p class="mou-text">더동행과 함께하는 협약 기관들을 소개합니다</p>
-            </div>
-            <div class="mou-content">
-                <div>
-                    <img src="./img/mou1.png" alt="mou체결">
-                    <div class="mou-content-text">
-                        <span class="mou-badge">MOU 협약기관</span>
-                        <p>박언휘종합내과</p>
+    <section class="mou section">
+        <div class="container inner">
+            <h2 class="section-title"> MOU 체결</h2>
+            <p class="section-subtitle">더동행과 함께하는 협약 기관들을 소개합니다</p>
+
+            <div class="mou-content fade-up">
+
+                <!-- // mou 카드 시작 -->
+                <div class="mou-card fade-child">
+                    <div class="mou-img">
+                        <img src="./assets/img/mou1.png" alt="mou체결">
+                    </div>
+                    <div class="mou-text">
+                        <span class="mou-badge"> <i class="fa-solid fa-handshake"></i> MOU 협약기관</span>
+                        <span>박언휘종합내과</span>
                     </div>
                 </div>
-                <div><img src="./img/mou2.png" alt="mou체결">
-                    <div class="mou-content-text">
-                        <span class="mou-badge">MOU 협약기관</span>
-                        <p>한패밀리병원</p>
+                <!-- mou 카드 끝 // -->
+
+                <div class="mou-card fade-child">
+                    <div class="mou-img">
+                        <img src="assets/img/mou2.png" alt="mou체결">
+                    </div>
+                    <div class="mou-text">
+                        <span class="mou-badge"><i class="fa-solid fa-handshake"></i> MOU 협약기관</span>
+                        <span>한패밀리병원</span>
                     </div>
                 </div>
-                <div><img src="./img/mou3.png" alt="mou체결">
-                    <div class="mou-content-text">
-                        <span class="mou-badge">MOU 협약기관</span>
-                        <p>(의)일민의료재단 세강병원</p>
+                <div class="mou-card fade-child">
+                    <div class="mou-img">
+                        <img src="./assets/img/mou3.png" alt="mou체결">
+                    </div>
+                    <div class="mou-text">
+                        <span class="mou-badge"> <i class="fa-solid fa-handshake"></i> MOU 협약기관</span>
+                        <span>(의)일민의료재단 세강병원</span>
                     </div>
                 </div>
             </div>
@@ -254,13 +280,16 @@
     </section>
 
     <!-- 이용 후기 -->
-    <section class="reviews-section">
+    <section class="reviews section bg">
         <div class="container">
             <h2 class="section-title">고객님들의 후기</h2>
             <p class="section-subtitle">더 동행과 함께한 분들의 소중한 이야기</p>
 
-            <div class="reviews-grid">
+            <div class="reviews-grid inner">
+
+                <!-- // 리뷰 카드 시작 -->
                 <article class="review-card">
+                    <h3 class="hidden">고객 후기</h3>
                     <div class="review-rating">
                         <span class="star">★</span>
                         <span class="star">★</span>
@@ -274,8 +303,10 @@
                         <span>서비스 이용자</span>
                     </div>
                 </article>
+                <!-- 리뷰 카드 끝 // -->
 
                 <article class="review-card">
+                    <h3 class="hidden">고객 후기</h3>
                     <div class="review-rating">
                         <span class="star">★</span>
                         <span class="star">★</span>
@@ -291,6 +322,7 @@
                 </article>
 
                 <article class="review-card">
+                    <h3 class="hidden">고객 후기</h3>
                     <div class="review-rating">
                         <span class="star">★</span>
                         <span class="star">★</span>
@@ -313,25 +345,25 @@
     </section>
 
     <!-- 공지사항 -->
-    <section class="notice-section">
+    <section class="notice section">
         <div class="container">
-            <div class="notice-header">
+            <div class="notice-header inner">
                 <h2 class="section-title">공지사항</h2>
-                <a href="notice.html" class="notice-more">전체보기</a>
+                <a href="notice.html" class="btn btn-outline">전체보기</a>
             </div>
 
-            <ul class="notice-list">
+            <ul class="notice-list inner">
                 <li class="notice-item">
                     <a href="notice.html">
                         <span class="notice-badge">공지</span>
-                        <span class="notice-title">2025년 11월 병원동행매니저 교육 일정 안내</span>
+                        <span class="notice-title">2025년 11월 병원 동행 매니저 교육 일정 안내</span>
                         <span class="notice-date">2025.10.10</span>
                     </a>
                 </li>
                 <li class="notice-item">
                     <a href="notice.html">
                         <span class="notice-badge">채용</span>
-                        <span class="notice-title">병원동행매니저 상시 채용 공고</span>
+                        <span class="notice-title">병원동행매니저 상시 채용 공고 상시 채용 공고 상시 채용 공고</span>
                         <span class="notice-date">2025.10.05</span>
                     </a>
                 </li>
@@ -359,24 +391,24 @@
                 <h2 class="section-title">더 동행과 함께하세요</h2>
                 <p class="section-subtitle">언제든지 편하게 문의해주세요</p>
 
-                <div class="contact-buttons">
-                    <a href="tel:000-0000-0000" class="contact-btn fade-up">
+                <div class="contact-buttons inner">
+                    <a href="tel:000-0000-0000" class="contact-btn">
                         <span class="contact-icon">
-                            <img src="/img/contact1.png" alt="전화문의아이콘">
+                            <img src="assets/img/contact1.png" alt="전화문의아이콘">
                         </span>
-                        <span class="contact-text">전화 문의</span>
+                        <span class="contact-text">전화 문의 <i class="fa-solid fa-arrow-right"></i></span>
                     </a>
-                    <a href="contact.html" class="contact-btn fade-up">
+                    <a href="contact.html" class="contact-btn">
                         <span class="contact-icon">
-                            <img src="/img/contact2.png" alt="온라인문의아이콘">
+                            <img src="assets/img/contact2.png" alt="온라인문의아이콘">
                         </span>
-                        <span class="contact-text">온라인 문의</span>
+                        <span class="contact-text">온라인 문의 <i class="fa-solid fa-arrow-right"></i></span>
                     </a>
-                    <a href="#" class="contact-btn kakao fade-up">
+                    <a href="#" class="contact-btn kakao">
                         <span class="contact-icon">
-                            <img src="/img/contact3.png" alt="카카오톡문의아이콘">
+                            <img src="assets/img/contact3.png" alt="카카오톡문의아이콘">
                         </span>
-                        <span class="contact-text">카카오톡 문의</span>
+                        <span class="contact-text">카카오톡 문의 <i class="fa-solid fa-arrow-right"></i></span>
                     </a>
                 </div>
             </div>
@@ -388,7 +420,6 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-info">
-                    <h3 class="footer-logo">더 동행</h3>
                     <address class="footer-address">
                         <p><strong>상호명:</strong> 더 동행 | <strong>대표자:</strong> 000</p>
                         <p><strong>사업자등록번호:</strong> 000-00-00000</p>
@@ -398,66 +429,31 @@
                     </address>
                 </div>
 
-                <div class="footer-customer">
-                    <h4>고객센터</h4>
-                    <p class="footer-tel">000-0000-0000</p>
-                    <p class="footer-time">평일 09:00 - 18:00<br>주말 및 공휴일 휴무</p>
+                <div class="footer-logo">
+                    <img src="./assets/img/ft_logo.png" alt="">
                 </div>
             </div>
+
 
             <div class="footer-bottom">
                 <div class="footer-links">
                     <a href="#">이용약관</a>
-                    <a href="#" class="privacy"><strong>개인정보처리방침</strong></a>
-                    <a href="contact.html">제휴문의</a>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
                 </div>
                 <p class="copyright">© 2025 The Donghaeng. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- 맨 위로 버튼 -->
-    <button class="scroll-top" aria-label="맨 위로 이동">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 19V5M5 12l7-7 7 7" />
+    <!-- 상단으로 -->
+    <button id="backToTop" aria-label="페이지 상단으로 이동" title="상단으로 이동">
+        <!-- 간단한 화살표 SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 5.83l4.88 4.88-1.41 1.41L13 9.66V20h-2V9.66L8.53 12.12 7.12 10.71z" />
         </svg>
     </button>
 
     <script>
-        // 모바일 메뉴 토글
-        const menuToggle = document.querySelector('.menu-toggle');
-        const gnb = document.querySelector('.gnb');
-        const gnbItems = document.querySelectorAll('.gnb-list > li');
-
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-            gnb.classList.toggle('active');
-        });
-
-        gnbItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                if (window.innerWidth <= 768) {
-                    const snb = item.querySelector('.snb');
-                    const clickedLink = e.target.closest('a');
-                    const mainLink = item.querySelector('a');
-
-                    // 클릭된 게 상위 메뉴일 때만 작동
-                    if (snb && clickedLink === mainLink) {
-                        e.preventDefault();
-
-                        // 다른 메뉴 닫기 (자기 자신 제외)
-                        gnbItems.forEach(other => {
-                            if (other !== item) {
-                                other.classList.remove('active');
-                            }
-                        });
-
-                        // 현재 항목만 토글
-                        item.classList.toggle('active');
-                    }
-                }
-            });
-        });
 
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768) {
@@ -466,6 +462,61 @@
                 gnbItems.forEach(item => item.classList.remove('active'));
             }
         });
+
+        // 슬라이더
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".hero-slide");
+            const prevBtn = document.querySelector(".hero-prev");
+            const nextBtn = document.querySelector(".hero-next");
+            const dotsContainer = document.querySelector(".hero-dots");
+
+            let current = 0;
+            let timer;
+
+            // 점(dot) 생성
+            slides.forEach((_, i) => {
+                const dot = document.createElement("div");
+                dot.classList.add("hero-dot");
+                if (i === 0) dot.classList.add("active");
+                dot.addEventListener("click", () => showSlide(i));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = document.querySelectorAll(".hero-dot");
+
+            function showSlide(index) {
+                slides[current].classList.remove("active");
+                dots[current].classList.remove("active");
+                current = (index + slides.length) % slides.length;
+                slides[current].classList.add("active");
+                dots[current].classList.add("active");
+                resetTimer();
+            }
+
+            function nextSlide() {
+                showSlide(current + 1);
+            }
+
+            function prevSlide() {
+                showSlide(current - 1);
+            }
+
+            function autoSlide() {
+                timer = setInterval(() => showSlide(current + 1), 6000);
+            }
+
+            function resetTimer() {
+                clearInterval(timer);
+                autoSlide();
+            }
+
+            prevBtn.addEventListener("click", prevSlide);
+            nextBtn.addEventListener("click", nextSlide);
+
+            autoSlide();
+        });
+
+
     </script>
 </body>
 

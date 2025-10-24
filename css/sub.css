@@ -1,0 +1,118 @@
+/* ==========================================
+   페이지 타이틀
+   ========================================== */
+.page-title {
+    background: #c6e2f3;
+    color: #222;
+    text-align: center;
+    padding: 80px 20px 60px;
+    margin-top: 76px;
+    position: relative;
+}
+
+.page-title img {
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page-title h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.page-title p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* ==========================================
+   서브 네비게이션
+   ========================================== */
+.sub-nav {
+    background: #fff;
+    border-bottom: 2px solid var(--line-color);
+    position: sticky;
+    top: 76px;
+    z-index: 100;
+}
+
+.sub-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.sub-nav-list li {
+    flex: 1;
+    text-align: center;
+}
+
+.sub-nav-list a {
+    display: block;
+    padding: 20px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.sub-nav-list li.active a,
+.sub-nav-list a:hover {
+    color: var(--main-color);
+    border-bottom-color: var(--main-color);
+}
+
+@media screen and (max-width:1000px) {
+    .page-title h2 {
+        font-size: 36px;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    .sub-nav-list a {
+        padding: 16px 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .page-title {
+        padding: 60px 20px 40px;
+        margin-top: 50px;
+    }
+
+    .page-title h2 {
+        font-size: 28px;
+    }
+
+    .page-title p {
+        font-size: 14px;
+    }
+
+    .sub-nav {
+        top: 50px;
+        overflow-x: auto;
+    }
+
+    .sub-nav-list {
+        justify-content: flex-start;
+        min-width: max-content;
+    }
+
+    .sub-nav-list li {
+        flex: 0 0 auto;
+    }
+
+    .sub-nav-list a {
+        padding: 16px 20px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+}

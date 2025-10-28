@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="더 동행 - 함께 걷는 길, 더 따뜻한 동행">
+    <title>커리큘럼 안내 - 더 동행</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/program.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favi/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="/assets/img/logo.png" alt="동행로고">
+                    </a>
+                    <span class="hidden">더동행</span>
+                </h1>
+
+                <button class="menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="gnb" aria-label="주요 메뉴">
+                    <ul class="gnb-list">
+                        <li>
+                            <a href="about.html">회사소개</a>
+                            <ul class="snb">
+                                <li><a href="about.html">인사말</a></li>
+                                <li><a href="about2.html">설립배경</a></li>
+                                <li><a href="about3.html">운영 철학</a></li>
+                                <li><a href="about4.html">조직도 / 협력기관</a></li>
+                                <li><a href="about5.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="service.html">서비스안내</a>
+                            <ul class="snb">
+                                <li><a href="service.html">병원동행 서비스</a></li>
+                                <li><a href="service2.html">기관용 파견 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="program.html">교육프로그램</a>
+                            <ul class="snb">
+                                <li><a href="program.html">교육소개</a></li>
+                                <li><a href="program2.html">커리큘럼 안내</a></li>
+                                <li><a href="program3.html">교육 일정 및 신청</a></li>
+                                <li><a href="program4.html">수료자 인터뷰/ 후기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="volunteer.html">더동행 전문봉사단</a>
+                            <ul class="snb">
+                                <li><a href="volunteer.html">더동행 전문봉사단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="location.html">센터찾기</a>
+                            <ul class="snb">
+                                <li><a href="location.html">센터찾기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="community,html">커뮤니티</a>
+                            <ul class="snb">
+                                <li><a href="">커뮤니티</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title program">
+        <img src="./assets/img/program-icon.png" alt="프로그램아이콘">
+        <div class="container">
+            <h2>교육프로그램</h2>
+            <p>전문 병원동행매니저 양성 교육</p>
+        </div>
+    </section>
+
+    <!-- 서브 네비게이션 -->
+    <section class="sub-nav">
+        <div class="container">
+            <ul class="sub-nav-list inner">
+                <li><a href="program.html">교육소개</a></li>
+                <li class="active"><a href="program2.html">커리큘럼 안내</a></li>
+                <li><a href="program3.html">교육 일정 및 신청</a></li>
+                <li><a href="program4.html">수료자 인터뷰/ 후기</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 커리큘럼 소개 -->
+    <section class="curriculum-intro section">
+        <div class="container">
+            <div class="intro-content inner">
+                <h3 class="intro-title">
+                    <span class="highlight">4주 120시간</span> 체계적인 교육 과정
+                </h3>
+                <p class="intro-text">
+                    이론과 실습을 균형있게 배치한 커리큘럼으로<br>
+                    현장에서 바로 활용 가능한 실무 능력을 키웁니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주차별 커리큘럼 -->
+    <section class="weekly-curriculum section bg">
+        <div class="container">
+            <h2 class="section-title">주차별 커리큘럼</h2>
+            <p class="section-subtitle">단계별 체계적인 학습</p>
+
+            <div class="curriculum-content inner">
+                <!-- 1주차 -->
+                <div class="week-block">
+                    <div class="week-header">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="week-label">WEEK 1</div>
+                        <h3>의료 기초 지식 및 병원 시스템 이해</h3>
+                        <p class="week-time">30시간</p>
+                    </div>
+                    <div class="week-body">
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 1</span>
+                                <span class="day-subject">오리엔테이션 및 의료 용어</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>교육 과정 소개 및 수강생 OT</li>
+                                <li>병원동행매니저의 역할과 자세</li>
+                                <li>기본 의료 용어 학습</li>
+                                <li>병원 조직 구조 이해</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 2</span>
+                                <span class="day-subject">주요 질환 및 증상</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>고혈압, 당뇨 등 만성질환 이해</li>
+                                <li>노인성 질환의 특징</li>
+                                <li>증상 파악 및 관찰 요령</li>
+                                <li>응급 상황 인식</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 3</span>
+                                <span class="day-subject">병원 이용 절차</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>진료 예약 및 접수 방법</li>
+                                <li>진료과별 특성 이해</li>
+                                <li>검사 종류 및 절차</li>
+                                <li>진료비 수납 및 영수증</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 4</span>
+                                <span class="day-subject">의료 서류 및 보험</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>진단서, 소견서 등 서류 종류</li>
+                                <li>건강보험 청구 절차</li>
+                                <li>실손보험 이해</li>
+                                <li>의료급여 제도</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 5</span>
+                                <span class="day-subject">1주차 평가 및 실습</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>1주차 이론 평가</li>
+                                <li>병원 예약 시뮬레이션</li>
+                                <li>의료 용어 퀴즈</li>
+                                <li>질의응답 및 피드백</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2주차 -->
+                <div class="week-block">
+                    <div class="week-header">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="week-label">WEEK 2</div>
+                        <h3>실무 기술 및 안전 관리</h3>
+                        <p class="week-time">30시간</p>
+                    </div>
+                    <div class="week-body">
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 1</span>
+                                <span class="day-subject">이동 및 보행 보조</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>안전한 이동 보조 기술</li>
+                                <li>계단 오르내리기 지원</li>
+                                <li>보행기 사용법</li>
+                                <li>낙상 예방 요령</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 2</span>
+                                <span class="day-subject">휠체어 사용 및 관리</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>휠체어 종류 및 조작법</li>
+                                <li>휠체어 이동 시 안전 수칙</li>
+                                <li>휠체어 승하차 보조</li>
+                                <li>휠체어 점검 및 관리</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 3</span>
+                                <span class="day-subject">응급 상황 대처</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>응급상황 판단 및 신고</li>
+                                <li>심폐소생술(CPR) 이론 및 실습</li>
+                                <li>자동심장충격기(AED) 사용법</li>
+                                <li>기도 폐쇄 시 대처</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 4</span>
+                                <span class="day-subject">감염 예방 및 위생 관리</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>손위생 및 마스크 착용</li>
+                                <li>병원 내 감염 예방</li>
+                                <li>개인 보호구 사용법</li>
+                                <li>환자 위생 관리</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 5</span>
+                                <span class="day-subject">2주차 평가 및 실기</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>이론 평가</li>
+                                <li>CPR 실기 테스트</li>
+                                <li>휠체어 조작 실습</li>
+                                <li>질의응답 및 피드백</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3주차 -->
+                <div class="week-block">
+                    <div class="week-header">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="week-label">WEEK 3</div>
+                        <h3>서비스 매너 및 의사소통</h3>
+                        <p class="week-time">30시간</p>
+                    </div>
+                    <div class="week-body">
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 1</span>
+                                <span class="day-subject">고객 응대 기본</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>서비스 기본 자세 및 태도</li>
+                                <li>첫인상 관리</li>
+                                <li>인사 및 기본 예절</li>
+                                <li>복장 및 용모 관리</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 2</span>
+                                <span class="day-subject">커뮤니케이션 스킬</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>경청과 공감 대화법</li>
+                                <li>노인과의 효과적 대화</li>
+                                <li>보호자와의 소통</li>
+                                <li>의료진과의 협력</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 3</span>
+                                <span class="day-subject">상황별 대응 요령</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>불만 고객 응대</li>
+                                <li>돌발 상황 대처</li>
+                                <li>거부 반응 대응</li>
+                                <li>스트레스 관리</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 4</span>
+                                <span class="day-subject">서비스 품질 관리</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>서비스 표준 프로세스</li>
+                                <li>업무 보고 및 기록</li>
+                                <li>개인정보 보호</li>
+                                <li>직업 윤리</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 5</span>
+                                <span class="day-subject">3주차 평가 및 롤플레이</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>이론 평가</li>
+                                <li>고객 응대 롤플레이</li>
+                                <li>상황극 실습</li>
+                                <li>질의응답 및 피드백</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4주차 -->
+                <div class="week-block">
+                    <div class="week-header">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="week-label">WEEK 4</div>
+                        <h3>현장 실습 및 종합 평가</h3>
+                        <p class="week-time">30시간</p>
+                    </div>
+                    <div class="week-body">
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 1-3</span>
+                                <span class="day-subject">협력병원 현장 실습</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>병원 환경 적응 및 관찰</li>
+                                <li>실제 동행 서비스 참관</li>
+                                <li>멘토 매니저와 동행</li>
+                                <li>현장 실습 일지 작성</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 4</span>
+                                <span class="day-subject">케이스 스터디</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>실제 사례 분석</li>
+                                <li>문제 해결 토론</li>
+                                <li>베스트 프랙티스 공유</li>
+                                <li>개선 방안 도출</li>
+                            </ul>
+                        </div>
+
+                        <div class="day-item">
+                            <div class="day-title">
+                                <span class="day-label">Day 5</span>
+                                <span class="day-subject">종합 평가 및 수료식</span>
+                            </div>
+                            <ul class="day-topics">
+                                <li>필기 시험</li>
+                                <li>실기 시험</li>
+                                <li>수료증 수여</li>
+                                <li>취업 상담</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 교재 안내 -->
+    <section class="textbook-info section">
+        <div class="container">
+            <h2 class="section-title">교재 안내</h2>
+            <p class="section-subtitle">체계적으로 구성된 교육 자료</p>
+
+            <div class="textbook-grid inner">
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3>메인 교재</h3>
+                    <p>병원동행매니저<br>전문 교육 과정</p>
+                    <span class="textbook-note">무료 제공</span>
+                </div>
+
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3>워크북</h3>
+                    <p>실습 및 평가<br>활동지</p>
+                    <span class="textbook-note">무료 제공</span>
+                </div>
+
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fa-solid fa-clipboard"></i>
+                    </div>
+                    <h3>실습 가이드</h3>
+                    <p>현장 실습<br>매뉴얼</p>
+                    <span class="textbook-note">무료 제공</span>
+                </div>
+
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h3>온라인 자료</h3>
+                    <p>동영상 강의 및<br>참고 자료</p>
+                    <span class="textbook-note">플랫폼 제공</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <address class="footer-address">
+                        <p><strong>상호명:</strong> 더 동행 | <strong>대표자:</strong> 000</p>
+                        <p><strong>사업자등록번호:</strong> 000-00-00000</p>
+                        <p><strong>주소:</strong> 대구광역시 00구 00로 00</p>
+                        <p><strong>대표전화:</strong> 000-0000-0000</p>
+                        <p><strong>이메일:</strong> thedonghaeng@naver.com</p>
+                    </address>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="./assets/img/ft_logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">이용약관</a>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
+                </div>
+                <p class="copyright">© 2025 The Donghaeng. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 상단으로 -->
+    <button id="backToTop" aria-label="페이지 상단으로 이동" title="상단으로 이동">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 5.83l4.88 4.88-1.41 1.41L13 9.66V20h-2V9.66L8.53 12.12 7.12 10.71z" />
+        </svg>
+    </button>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const blockHeaders = document.querySelectorAll('.week-header');
+
+            blockHeaders.forEach(function (header) {
+                header.addEventListener('click', function () {
+                    const block = header.parentElement;
+                    const blockBody = block.querySelector('.week-body');
+
+                    // 이미 열려 있는지 확인
+                    const isActive = blockBody.classList.contains('active');
+
+                    // 모든 body 닫기
+                    const allBodies = document.querySelectorAll('.week-body');
+                    allBodies.forEach(function (body) {
+                        body.classList.remove('active');
+                    });
+
+                    // 기존에 닫혀 있던 body만 열기
+                    if (!isActive) {
+                        blockBody.classList.add('active');
+                    }
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

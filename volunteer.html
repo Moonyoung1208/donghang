@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="더 동행 - 함께 걷는 길, 더 따뜻한 동행">
+    <title>더동행 전문봉사단 - 더 동행</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favi/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="/assets/img/logo.png" alt="동행로고">
+                    </a>
+                    <span class="hidden">더동행</span>
+                </h1>
+
+                <button class="menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="gnb" aria-label="주요 메뉴">
+                    <ul class="gnb-list">
+                        <li>
+                            <a href="about.html">회사소개</a>
+                            <ul class="snb">
+                                <li><a href="about.html">인사말</a></li>
+                                <li><a href="about2.html">설립배경</a></li>
+                                <li><a href="about3.html">운의 철학</a></li>
+                                <li><a href="about4.html">조직도 / 협력기관</a></li>
+                                <li><a href="about5.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="service.html">서비스안내</a>
+                            <ul class="snb">
+                                <li><a href="service.html">병원동행 서비스</a></li>
+                                <li><a href="service2.html">기관용 파견 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="program.html">교육프로그램</a>
+                            <ul class="snb">
+                                <li><a href="program.html">교육소개</a></li>
+                                <li><a href="program2.html">커리큘럼 안내</a></li>
+                                <li><a href="program3.html">교육 일정 및 신청</a></li>
+                                <li><a href="program4.html">수료자 인터뷰/ 후기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="volunteer.html">더동행 전문봉사단</a>
+                            <ul class="snb">
+                                <li><a href="volunteer.html">더동행 전문봉사단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="location.html">센터찾기</a>
+                            <ul class="snb">
+                                <li><a href="location.html">센터찾기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="community.html">커뮤니티</a>
+                            <ul class="snb">
+                                <li><a href="">커뮤니티</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title volunteer">
+        <img src="./assets/img/volunteer-icon.png" alt="봉사단아이콘">
+        <div class="container">
+            <h2>더동행 전문봉사단</h2>
+            <p>전문 지식을 나누고 함께 성장하는 봉사 공동체</p>
+        </div>
+    </section>
+
+    <!-- 봉사단 소개 -->
+    <section class="volunteer-intro section">
+        <div class="container">
+            <div class="intro-content inner">
+                <h3 class="intro-title">
+                    <span class="highlight">더동행 전문봉사단</span>
+                </h3>
+                <p class="intro-text">
+                    병원 동행 서비스 및 교육 프로그램을 통해 양성된 전문 인력들이<br>
+                    자신의 경험과 지식을 나누고 함께 성장하는 봉사 조직입니다.<br>
+                    더동행과 함께 의미 있는 봉사 활동에 참여하세요.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 봉사 게시판 -->
+    <section class="volunteer-board section bg">
+        <div class="container">
+            <h2 class="section-title">봉사 활동 게시판</h2>
+            <p class="section-subtitle">최근 봉사 활동 소식</p>
+
+            <!-- 게시판 검색 -->
+            <div class="board-controls inner">
+                <div class="search-box">
+                    <input type="text" placeholder="봉사 활동 검색...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <!-- 게시판 테이블 -->
+            <div class="board-table inner">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-num">번호</th>
+                            <th class="col-category">구분</th>
+                            <th class="col-title">제목</th>
+                            <th class="col-author">작성자</th>
+                            <th class="col-date">작성일</th>
+                            <th class="col-views">조회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="post-item" data-category="notice">
+                            <td class="col-num">15</td>
+                            <td class="col-category"><span class="badge badge-notice">공지</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">2025년 봉사 활동 계획 안내</a>
+                                <span class="badge badge-new">NEW</span>
+                            </td>
+                            <td class="col-author">더동행</td>
+                            <td class="col-date">2025-10-25</td>
+                            <td class="col-views">156</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">14</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">10월 병원 동행 봉사 활동 모음</a>
+                            </td>
+                            <td class="col-author">김봉사</td>
+                            <td class="col-date">2025-10-24</td>
+                            <td class="col-views">243</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">13</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">2025 추계 정기 모임 사진 모음</a>
+                            </td>
+                            <td class="col-author">이봉사</td>
+                            <td class="col-date">2025-10-20</td>
+                            <td class="col-views">389</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">12</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">장애인 시설 봉사 활동 참가 후기</a>
+                            </td>
+                            <td class="col-author">박동행</td>
+                            <td class="col-date">2025-10-18</td>
+                            <td class="col-views">167</td>
+                        </tr>
+                        <tr class="post-item" data-category="notice">
+                            <td class="col-num">11</td>
+                            <td class="col-category"><span class="badge badge-notice">공지</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">11월 정기 모임 일정 공지</a>
+                            </td>
+                            <td class="col-author">더동행</td>
+                            <td class="col-date">2025-10-15</td>
+                            <td class="col-views">201</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">10</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">9월 봉사 활동 스냅샷</a>
+                            </td>
+                            <td class="col-author">최봉사</td>
+                            <td class="col-date">2025-10-10</td>
+                            <td class="col-views">521</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">9</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">노인 요양시설 봉사 활동 완료</a>
+                            </td>
+                            <td class="col-author">정동행</td>
+                            <td class="col-date">2025-10-08</td>
+                            <td class="col-views">134</td>
+                        </tr>
+                        <tr class="post-item" data-category="notice">
+                            <td class="col-num">8</td>
+                            <td class="col-category"><span class="badge badge-notice">공지</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">봉사 활동 참가 신청 방법 안내</a>
+                            </td>
+                            <td class="col-author">더동행</td>
+                            <td class="col-date">2025-10-05</td>
+                            <td class="col-views">312</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">7</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">지역사회 건강 교육 프로그램 운영</a>
+                            </td>
+                            <td class="col-author">한봉사</td>
+                            <td class="col-date">2025-10-03</td>
+                            <td class="col-views">198</td>
+                        </tr>
+                        <tr class="post-item" data-category="general">
+                            <td class="col-num">6</td>
+                            <td class="col-category"><span class="badge badge-general">일반</span></td>
+                            <td class="col-title">
+                                <a href="#" class="post-title">봉사단 정기 교육 후 단체 사진</a>
+                            </td>
+                            <td class="col-author">이동행</td>
+                            <td class="col-date">2025-09-28</td>
+                            <td class="col-views">445</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination inner">
+                <button class="page-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <!-- 게시물 작성 버튼 -->
+            <div class="board-action inner">
+                <a href="#" class="btn btn-large">
+                    <i class="fa-solid fa-pen"></i>
+                    글 작성
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 봉사 혜택 -->
+    <section class="volunteer-benefits section">
+        <div class="container">
+            <h2 class="section-title">봉사단 참가 혜택</h2>
+            <p class="section-subtitle">더동행 전문봉사단의 다양한 혜택</p>
+
+            <div class="benefits-grid inner">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3>봉사 활동 인증</h3>
+                    <p>봉사 시간 기록 및<br>인증서 발급</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>커뮤니티 활동</h3>
+                    <p>정기 모임 및<br>네트워킹 기회</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>교육 프로그램</h3>
+                    <p>전문성 강화를 위한<br>추가 교육 제공</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-gifts"></i>
+                    </div>
+                    <h3>특별 이벤트</h3>
+                    <p>봉사 활동 격려 및<br>포상 기회</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 봉사 신청 안내 -->
+    <section class="volunteer-apply section bg">
+        <div class="container">
+            <div class="apply-box inner">
+                <h2>더동행 전문봉사단 참가 신청</h2>
+                <p>우리와 함께 의미 있는 봉사 활동을 시작하세요!</p>
+
+                <div class="apply-steps">
+                    <div class="apply-step">
+                        <div class="step-num">1</div>
+                        <p>교육 이수</p>
+                    </div>
+                    <div class="apply-arrow">→</div>
+                    <div class="apply-step">
+                        <div class="step-num">2</div>
+                        <p>봉사단 신청</p>
+                    </div>
+                    <div class="apply-arrow">→</div>
+                    <div class="apply-step">
+                        <div class="step-num">3</div>
+                        <p>활동 참가</p>
+                    </div>
+                    <div class="apply-arrow">→</div>
+                    <div class="apply-step">
+                        <div class="step-num">4</div>
+                        <p>지속적 참여</p>
+                    </div>
+                </div>
+
+                <div class="apply-buttons">
+                    <a href="program.html" class="btn btn-large btn-outline">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        교육 신청하기
+                    </a>
+                    <a href="#" class="btn btn-large btn-outline">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        봉사단 신청하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <address class="footer-address">
+                        <p><strong>상호명:</strong> 더 동행 | <strong>대표자:</strong> 000</p>
+                        <p><strong>사업자등록번호:</strong> 000-00-00000</p>
+                        <p><strong>주소:</strong> 대구광역시 00구 00로 00</p>
+                        <p><strong>대표전화:</strong> 000-0000-0000</p>
+                        <p><strong>이메일:</strong> thedonghaeng@naver.com</p>
+                    </address>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="./assets/img/ft_logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">이용약관</a>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
+                </div>
+                <p class="copyright">© 2025 The Donghaeng. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 상단으로 -->
+    <button id="backToTop" aria-label="페이지 상단으로 이동" title="상단으로 이동">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 5.83l4.88 4.88-1.41 1.41L13 9.66V20h-2V9.66L8.53 12.12 7.12 10.71z" />
+        </svg>
+    </button>
+
+    <script src="js/volunteer.js"></script>
+</body>
+
+</html>
